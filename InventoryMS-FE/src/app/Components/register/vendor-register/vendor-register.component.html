@@ -1,0 +1,47 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-9 col-lg-12 col-xl-6">
+            <div class="card shadow-lg o-hidden border-0 my-5">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="p-5">
+                                <div class="signup-form">
+                                    <form (ngSubmit)="registerVendor()" method="post">
+                                        <h2 class="text-center">Vendor's Signup</h2>
+                                        <hr>
+                                        <br>
+                                        
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="vendorName" placeholder="Name" required="required" [(ngModel)]="dealer.vendorName">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="vendorEmail" placeholder="Email" required="required" [(ngModel)]="dealer.vendorEmail">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="vendorAddress" placeholder="Address" required="required" [(ngModel)]="dealer.vendorAddress">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="vendorPhoneNO" placeholder="Phone Number" required="required" [(ngModel)]="dealer.vendorPhone">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" name="vendorPassword" placeholder="Password" required="required" [(ngModel)]="dealer.vendorPassword">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="reset" class="btn btn-warning text-white btn-lg btn-block" >Clear</button>
+                                        </div>
+                                    </form>
+                                    <div class="text-center">Already have an account? <a routerLink="/dealer-login">Login</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

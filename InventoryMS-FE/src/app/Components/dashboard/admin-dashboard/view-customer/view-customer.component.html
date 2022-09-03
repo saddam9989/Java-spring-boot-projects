@@ -1,0 +1,33 @@
+<app-admin-header [adminname]="adminname"></app-admin-header>
+<app-sidenav></app-sidenav>
+
+<div  class="w-80 " style="margin-left: 20%;">
+
+    <div class="container my-5">
+        <div class="mt-2">
+            <h2 class="text-center">All Customers</h2>
+            <table class="table table-bordered text-dark bg-light">
+                <thead class="thead">
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone No</th>
+                        <th>Address</th>
+                        <th colspan="2" class="text-center">Options</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                    <tr *ngFor="let customer of customers">
+                        <td>{{customer.customerName}}</td>
+                        <td>{{customer.customerEmail}}</td>
+                        <td>{{customer.customerPhoneNo}}</td>
+                        <td>{{customer.customerAddress}}</td>
+                        <td><a (click)="edit(customer)" class="btn btn-primary">Update</a></td>
+                        <td><button (click)="deleteCustomer(customer.customerId)" class="btn btn-danger">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

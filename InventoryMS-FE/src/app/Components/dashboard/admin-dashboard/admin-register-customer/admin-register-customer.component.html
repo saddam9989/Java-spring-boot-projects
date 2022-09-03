@@ -1,0 +1,34 @@
+<app-admin-header [adminname]="adminname"></app-admin-header>
+<app-sidenav></app-sidenav>
+
+<div class="w-50" style="margin-left: 35%;">
+
+    <div class="container">
+        <div class="signup-form mt-5">
+            <form (ngSubmit)="registerCustomer()" method="post">
+                <h2 class="text-center">Add Customers </h2>
+                <hr>
+                <br>
+                
+                <div class="form-group">
+                    <input type="text" class="form-control" name="customerName" placeholder="Name" required="required" [(ngModel)]="customer.customerName">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="customerEmail" placeholder="Email" required="required" [(ngModel)]="customer.customerEmail">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="customerAddress" placeholder="Address" required="required" [(ngModel)]="customer.customerAddress">
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="customerPhoneNO" placeholder="Phone Number" required="required" [(ngModel)]="customer.customerPhoneNo">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" name="customerPassword" placeholder="Password" required="required" [(ngModel)]="customer.customerPassword">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

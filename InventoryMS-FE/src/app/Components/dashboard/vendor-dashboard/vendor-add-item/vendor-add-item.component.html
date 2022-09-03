@@ -1,0 +1,48 @@
+
+ <app-vendor-header [vendorId]="this.id" [vendorName]="this.name"></app-vendor-header>
+<app-vennav></app-vennav>
+<div class="w-50 " style="margin-left: 35%;">
+
+   
+
+    <div class="signup-form container mt-5">
+        <form (ngSubmit)="addItem()" method="post">
+            <h2 class="text-center">Add Item</h2>
+            <hr>
+            <br>
+            <div class="form-group">
+                <input type="hidden" class="form-control" name="itemId" placeholder="Item Id" required="required"
+                    [(ngModel)]="item.itemId">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="itemName" placeholder="Item Name" required="required"
+                    [(ngModel)]="item.itemName">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="itemCategory" placeholder="Category" required="required"
+                    [(ngModel)]="item.itemCategory">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="itemDescription" placeholder="Description"
+                    required="required" [(ngModel)]="item.itemDescription">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="itemPrice" placeholder="Price per item"
+                    required="required" [(ngModel)]="item.itemPrice">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="itemQuantity" placeholder="Quantity" required="required"
+                    [(ngModel)]="item.itemQuantity">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" name="vendorId" placeholder="Vendor ID" required="required"
+                    [(ngModel)]="item.vendorId" readonly>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg btn-block">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
+<app-footer></app-footer>
+

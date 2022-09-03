@@ -1,0 +1,46 @@
+<app-header></app-header>
+<app-check-login></app-check-login>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9 col-lg-8 col-xl-8">
+        <div class="card shadow-lg o-hidden border-0 my-5">
+          <div class="card-body p-0">
+            <div class="p-5">
+              <div class="text-center" style="margin-bottom: 5%;">
+                <h1>Reset Password</h1>
+              </div>
+              <form (ngSubmit)="forgot()">
+                <div class="form-group">
+                  <input type="email" id="login" class="form-control form-control-user" name="customerEmail" placeholder="Customer : Enter Your Email" [(ngModel)]="customer.customerEmail">
+                </div>
+  
+                <div class="form-group">
+                    <input type="password" id="password" class="form-control form-control-user" name="customerPassword" placeholder="Password" [(ngModel)]="customer.customerPassword">
+                </div>
+  
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" class="form-control form-control-user" name="confirmPassword" placeholder="Confirm Password" [(ngModel)]="confirmPassword">
+                </div>
+
+                <button
+                  class="btn btn-primary btn-block text-white btn-user"
+                  type="submit">
+                  Reset Password
+                </button>
+              </form>
+
+              <hr />
+              
+              <div class="text-center">
+                <a class="ml-1" routerLink="/customer-login">Back to Login!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <app-footer></app-footer>

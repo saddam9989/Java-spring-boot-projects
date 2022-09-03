@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-13T18:59:14 IST" name="Default suite" finished-at="2022-06-13T18:59:25 IST" duration-ms="11753">
+    <groups>
+      <group name="InventoryMS">
+        <method signature="VendorTest.launchInventoryMS()[pri:0, instance:com.inventory.VendorTest@72bc6553]" name="launchInventoryMS" class="com.inventory.VendorTest"/>
+        <method signature="VendorTest.vendorlogin()[pri:0, instance:com.inventory.VendorTest@72bc6553]" name="vendorlogin" class="com.inventory.VendorTest"/>
+        <method signature="VendorTest.vregister()[pri:0, instance:com.inventory.VendorTest@72bc6553]" name="vregister" class="com.inventory.VendorTest"/>
+        <method signature="VendorTest.register()[pri:0, instance:com.inventory.VendorTest@72bc6553]" name="register" class="com.inventory.VendorTest"/>
+        <method signature="VendorTest.alert1()[pri:0, instance:com.inventory.VendorTest@72bc6553]" name="alert1" class="com.inventory.VendorTest"/>
+        <method signature="VendorTest.login()[pri:0, instance:com.inventory.VendorTest@72bc6553]" name="login" class="com.inventory.VendorTest"/>
+        <method signature="VendorTest.alert()[pri:0, instance:com.inventory.VendorTest@72bc6553]" name="alert" class="com.inventory.VendorTest"/>
+        <method signature="VendorTest.clickviewsales()[pri:0, instance:com.inventory.VendorTest@72bc6553]" name="clickviewsales" class="com.inventory.VendorTest"/>
+      </group> <!-- InventoryMS -->
+    </groups>
+    <test started-at="2022-06-13T18:59:14 IST" name="Default test" finished-at="2022-06-13T18:59:25 IST" duration-ms="11753">
+      <class name="com.inventory.VendorTest">
+        <test-method signature="launchInventoryMS()[pri:0, instance:com.inventory.VendorTest@72bc6553]" started-at="2022-06-13T18:59:14 IST" name="launchInventoryMS" finished-at="2022-06-13T18:59:20 IST" duration-ms="6400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchInventoryMS -->
+        <test-method signature="vendorlogin()[pri:0, instance:com.inventory.VendorTest@72bc6553]" started-at="2022-06-13T18:59:20 IST" name="vendorlogin" finished-at="2022-06-13T18:59:20 IST" depends-on-methods="com.inventory.VendorTest.launchInventoryMS" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vendorlogin -->
+        <test-method signature="vregister()[pri:0, instance:com.inventory.VendorTest@72bc6553]" started-at="2022-06-13T18:59:20 IST" name="vregister" finished-at="2022-06-13T18:59:20 IST" depends-on-methods="com.inventory.VendorTest.vendorlogin" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vregister -->
+        <test-method signature="register()[pri:0, instance:com.inventory.VendorTest@72bc6553]" started-at="2022-06-13T18:59:20 IST" name="register" finished-at="2022-06-13T18:59:21 IST" depends-on-methods="com.inventory.VendorTest.vregister" duration-ms="573" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- register -->
+        <test-method signature="alert1()[pri:0, instance:com.inventory.VendorTest@72bc6553]" started-at="2022-06-13T18:59:21 IST" name="alert1" finished-at="2022-06-13T18:59:23 IST" depends-on-methods="com.inventory.VendorTest.register" duration-ms="2027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alert1 -->
+        <test-method signature="login()[pri:0, instance:com.inventory.VendorTest@72bc6553]" started-at="2022-06-13T18:59:23 IST" name="login" finished-at="2022-06-13T18:59:23 IST" depends-on-methods="com.inventory.VendorTest.alert1" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="alert()[pri:0, instance:com.inventory.VendorTest@72bc6553]" started-at="2022-06-13T18:59:23 IST" name="alert" finished-at="2022-06-13T18:59:25 IST" depends-on-methods="com.inventory.VendorTest.login" duration-ms="2021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alert -->
+        <test-method signature="clickviewsales()[pri:0, instance:com.inventory.VendorTest@72bc6553]" started-at="2022-06-13T18:59:25 IST" name="clickviewsales" finished-at="2022-06-13T18:59:25 IST" depends-on-methods="com.inventory.VendorTest.alert" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickviewsales -->
+      </class> <!-- com.inventory.VendorTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

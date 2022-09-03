@@ -1,0 +1,51 @@
+<app-header></app-header>
+<app-check-login></app-check-login>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-9 col-lg-12 col-xl-6">
+      <div class="card shadow-lg o-hidden border-0 my-5">
+        <div class="card-body p-0">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="p-5">
+                <div class="text-center" style="margin-bottom: 5%;">
+                  <h1>Admin</h1>
+                </div>
+                <form class="user" (ngSubmit)="adminLogin()">
+                  
+                  <!-- Username -->
+                  <div class="form-group">
+                    <input type="username" id="ausername" class="form-control form-control-user" name="ausername" placeholder="Admin"
+                    [(ngModel)]="admin.ausername">
+                  </div>
+
+                  <!-- Password -->
+                  <div class="form-outline mb-4">
+                    <input type="password" id="apassword" class="form-control form-control-user" name="apassword" placeholder="Passowrd"
+                      [(ngModel)]="admin.apassword">
+                  </div>
+                    
+    
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-user" style="margin-right: 10px; margin-left: 10px;">Login</button> 
+        
+                  <button type="reset" class="btn btn-warning text-white" style="margin-right: 10px; margin-left: 10px;">Clear</button>
+
+                </div>
+            
+                </form>
+                <div class="text-center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<app-footer></app-footer>
+
